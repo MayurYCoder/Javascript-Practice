@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let person = [
+        {
+            name: "Mayur",
+            address: "pune",
+        },
+        {
+            name: "Akshay",
+            address: "Nasik"
+        }
+    ]
+    
+    //for in is used when you have to iterate over the object properties.
+    for (const key in person) {
+        console.log(`${key}:${person[key]}`);
+    }
+
+
+    //for of is used when we need a values in iteration
+    let no = [1, 20, 45, 65, 10, 35];
+
+    for (let iterator of no) {
+        iterator += 10;
+        console.log(iterator);
+    }
+</script>
+
+</html>

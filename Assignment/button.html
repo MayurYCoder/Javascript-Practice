@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- diffrence betn innertext and inner HTML -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .button {
+            border: none;
+            position: absolute;
+            width: 195px;
+            height: 50px;
+            left: 120px;
+            top: 0px;
+            background: #FA5542;
+            border-radius: 10px;
+            color: #FFFFFF;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <button onclick="resister()" class="button">Resister</button>
+<button onclick="displayData()">display data</button>
+    </div>
+
+</body>
+<script>
+    let body = document.body;
+    function resister() {
+        let paragraph = document.createElement("p")
+        body.appendChild(paragraph);
+
+        // paragraph.innerHTML="welcome to java script magic";
+        let content = "welcome to the javascript magic world";
+        paragraph.append(content);
+
+        // document.write("hello aliens");
+
+    }
+    function displayData(){
+
+        
+    }
+
+</script>
+
+</html>

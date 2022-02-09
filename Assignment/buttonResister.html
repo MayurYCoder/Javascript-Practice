@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistration Form</title>
+</head>
+<style>
+    #container {
+        margin-left: 430px;
+        margin-top: 20px;
+        border: 2px solid black;
+        height: 720px;
+        width: 620px;
+    }
+
+    .input {
+        height: 40px;
+        width: 370px;
+        margin-top: 50px;
+        margin-left: 110px;
+    }
+
+    .name {
+        height: 40px;
+        width: 220px;
+        margin-top: 70px;
+        margin-left: 50px;
+    }
+
+    ::placeholder {
+        text-align: center;
+    }
+
+    #button {
+        margin-top: 20px;
+        height: 40px;
+        width: 370px;
+        margin-left: 110px;
+    }
+
+    #checkbox {
+        margin-top: 70px;
+        margin-left: 120px;
+    }
+
+    .already {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div class="resistration">
+            <marquee>
+                <h1>Registration Form</h1>
+            </marquee>
+        </div>
+        <div>
+            <input id="email" class="input" type="Email" placeholder="Enter your Email Address">
+        </div>
+        <div>
+            <input id="password1" class="input" type="password" placeholder="Enter your Password here">
+        </div>
+        <div>
+            <input id="password2" class="input" type="password" placeholder="Re-Enter your Password here">
+        </div>
+
+        <div>
+            <input class="name" type="Text" placeholder="Enter your first Name">
+            <input class="name" type="Text" placeholder="Enter your last Name">
+        </div>
+        <div id="checkbox">
+            <input type="checkbox" name="conditions">
+            <span> I agree with the terms and conditions</span><br>
+            <!-- <input type="checkbox" name="conditions">
+            <span> I want to receive the notifications</span> -->
+        </div>
+        <div>
+            <button id="button" onclick="resister()">Register</button>
+        </div>
+        <p class="already">Already have an account? <a href="FrontPage.html"> logIn</a> </p>
+    </div>
+
+</body>
+<script>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome to arrays tutorial</h1>
+</body>
+<script>
+    //     let arr = ["maths", "chemistry", "physics", "English"];
+    //     // arr[4]="Geo";
+    //     arr.push("science");        //push is used to add element in array
+    //     arr.unshift("hindi");       //unshift is used to add element at 0 index
+    //     arr.pop();                  //pop is removes element from last
+    //     // arr.pop();
+    //     //arr.shift();              removes element from first
+    //     // arr.splice(1,3)          removes element from index to index
+    //        arr.slice(0,30)          return array of first 30 numbers
+    //     for (i = 0; i <= arr.length - 1; i++) {
+    //         console.log(arr[i]);
+    //     }
+    //     console.log(arr);
+
+
+    //     let text = "i am learning a full stag java";
+    //     let arr1 = text.split(" ");      //convert a string into array
+
+    //     let arr2=arr.join(" ")
+
+    //     let newArr=arr.concat(arr1);
+    //     console.log(newArr);
+
+    //     let arrMulti=[["mayur",100],["Danny",200],["pikachu",300]];
+    //     let fetchh=arrMulti[0][0];
+    //     console.log(fetchh);
+
+    let data=[
+        { productName: "iPhone", price: 100000 },
+        { productName: "nokia", price: 120000 },
+        { productName: "samsune", price: 50000 },
+        { productName: "redmi", price: 100000 },
+        { productName: "oppo", price: 40000 },
+        { productName: "vivo", price: 630000 },
+        { productName: "mi", price: 10000 },
+        { productName: "blackberry", price: 70000 }];
+
+        console.log(data);
+        console.log(data.find((element)=>{
+            if (element.price > 100000) 
+            return element;
+          }))
+
+     let no = [10, 30, 20, 15, 40, 55];
+let descending=no.sort((a,b)=>b-a);
+console.log(no);
+
+
+    // console.log(no);
+    // let sortedno = no.sort();
+    // console.log(sortedno);
+
+
+    // const array1=[10,20,30,45];
+
+    // function reduce1(previous, current){
+    //     const return1=previous+current;
+    //     console.log(return1);
+    //     return return1;
+    // }
+    // array1.reduce(reduce1);
+
+</script>
+
+</html>

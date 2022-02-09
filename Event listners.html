@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">Welcome to code </h1>
+
+    <button id="btn"> click me</button>
+
+</body>
+<script>
+    console.log("Wlcome to javascript");
+     document.getElementById('heading').addEventListener
+    //     ("mouseover", function (e) {
+    //         console.log("you click on the heading");
+    //         let variable;
+    //         // variable=e.target.id;
+    //         // variable=e.offsetX;
+    //         variable = e.offsetY;
+    //         console.log(variable);
+    //   })
+    document.getElementById("btn")
+
+    //double click is only for double click
+    //let butn=btn.addEventListener('dblclick',fun2);
+
+    //mousedown used for clicl by mscroll,right and left
+    let butn=btn.addEventListener('mousedown',fun3);
+    //  function fun2(e){
+    //     console.log("you double click button");  
+    // }
+     function fun3(e){
+        console.log("you mousedown click button");  
+    }
+   
+</script>
+
+</html>

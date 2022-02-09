@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+
+    <style>
+        #verify {
+            background: linear-gradient(#b2bb7a, white);
+
+            width: 300px;
+            height: 500px;
+            border-top: 30px;
+            /* border: black 2px solid;*/
+            margin: auto;
+            padding: 30px 220px 10px 220px;
+            text-align: center;
+        }
+    </style>
+</head>
+<script>
+
+</script>
+
+<body>
+    <div id="verify">
+        <div>
+            <label>
+                <h2>Enter Recipee Name</h2>
+            </label>
+        </div>
+        <div>
+            <input type="text" id="user">
+        </div>
+        <br>
+        <div>
+
+            <button onclick="verification()">Search</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+<script>
+
+
+    function verification() {
+        let dish = document.getElementById("user").value;
+        console.log(dish);
+
+        fetchdata(dish);
+
+        async function fetchdata(dish) {
+            id = '320c54f1';
+            key = '0eaf5172c1edf5cd9eb0c499fda2eb86';
+            baseURL = `https://api.edamam.com/search?q=${dish}&app_id=${id}&app_key=${key}&to=8`;
+            result = await fetch(baseURL);
+            data = await result.json();
+            console.log(data);
+
+        }
+
+       
+    }
+
+
+</script>
+
+</html>

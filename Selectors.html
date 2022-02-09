@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="selector" class="selector1">This is selector revision</p>
+    <div class="container" >
+        <h1>Welcome to javascript</h1>
+        <div class="child">welcome to div</div>
+        <div class="child">welcome to div2</div>
+        <div class="child">welcome to div3</div>
+        <div class="child">welcome to div4</div>
+        <input type="text">
+        <input type="button" value="submit">
+    </div>
+</body>
+<script src="Element creation.js">
+    let consta = document.querySelector(".container");
+    console.log(consta);
+    let Nodename=consta.childNodes[1].nodeName;
+    let Node=consta.childNodes[1].NodeType;
+    console.log(Nodename);
+    //console.log(NodeType);
+    // console.log(consta.childNodes);
+    // console.log(consta.children);
+
+    let container=document.querySelector('div.container');
+    console.log(container.firstChild);
+    console.log(container.firstElementChild);
+
+    
+
+
+
+
+    // //node types
+    // 1-element.
+    // 2.attribute
+    // 3.text
+    // 8-Comment
+    // 9-document
+    // 10-doctype.
+    // 10-
+</script>
+
+</html>
